@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cash Register Project</title>
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+        <h1>Cash Register Project</h1>
+    </header>
+    <main>
+        <div id="change-due"></div>
+        <div>
+            <label id="label-cash" for="cash">Enter cash from customer:</label>
+            <input id="cash" type="number" min="0" step="1" name="cash">
+        </div>
+        <button type="button" id="purchase-btn">Purchase</button>
+        <div id="cash-machine">
+            <div id="total-price">
+                <p id="price"></p>
+            </div>
+            <div id="middle-bridge"></div>
+            <div id="cash-register">
+                <div id="money-counter">
+                    <p>Change in drawer:</p>
+                    <!-- <p id="PENNY">PENNY: $1.01</p>
+                    <p id="NICKEL">NICKEL: $2.05</p>
+                    <p id="DIME">DIME: $3.10</p>
+                    <p id="QUARTER">QUARTER: $4.25</p>
+                    <p id="ONE">ONE: $90.00</p>
+                    <p id="FIVE">FIVE: $55.00</p>
+                    <p id="TEN">TEN: $20.00</p>
+                    <p id="TWENTY">TWENTY: $60.00</p>
+                    <p id="ONE HUNDRED">ONE HUNDRED: $100.00</p> -->
+                </div>
+            </div>
+            <div id="cash-bottom">
+                <div id="circle"></div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
