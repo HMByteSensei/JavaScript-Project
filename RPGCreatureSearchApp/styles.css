@@ -1,0 +1,151 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+  --dark-grey: #1b1b32;
+  --light-grey: #f5f6f7;
+  --black: #000;
+  --white: #fff;
+  --dark-white: #6f6c6c;
+  --grey: #3b3b4f;
+  --golden-yellow: #fecc4c;
+  --yellow: #ffcc4c;
+  --gold: #feac32;
+  --orange: #ffac33;
+  --dark-orange: #f89808;
+  --blue: #2e6ca7;
+}
+
+body {
+  background-color: var(--dark-grey);
+    height: 100vh;
+}
+
+.title {
+  font-size: 1.2rem;
+  color: var(--light-grey);
+  text-align: center;  
+  padding: 15px 0;
+}
+
+main {
+    position: relative;
+    width: 25%;
+    aspect-ratio: 1 / 1.5;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    position: absolute;
+    width: 100%;
+  height: 100%;
+    /* width: 25%;
+    aspect-ratio: 1 / 1.5; */
+    background-color: var(--white);
+    border-radius: 10px;
+    font-size: clamp(14px, 2vw, 22px);
+    z-index: 2;
+}
+
+.card:nth-of-type(2) {
+    z-index: 1;
+    top: 5px;
+    left: 5px;
+    background-color: var(--dark-white);
+}
+
+label {
+    display: block;
+    margin: 3% auto;
+    text-align: center;
+    font-size: 1.4vw;
+}
+
+section {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#search-input {
+    width: 12vw;
+    height: 4vh;
+    padding-left: 5px;
+    border-radius: 5px;
+}
+
+#search-button {
+    padding: 0 5px;
+    height: 4vh;     
+    border-radius: 5px;
+    background-color: var(--gold);
+}
+
+.result {
+    height: 100%;
+}
+
+.hidden {
+    display: none;
+    margin-top: 10px;
+}
+
+#creature-name {
+    margin-left: 5px;
+}
+
+#creature-name, #creature-id {
+    display: inline;
+    font-size: 2vw;
+}
+
+.result-search p:not(#creature-id), #types {
+  margin-left: 5px;
+  font-size: 1.5vw;
+}
+
+#types {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+    margin-top: 5px;
+}
+
+#types p {
+    display: inline-block;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: var(--orange);
+    border: 1px solid var(--dark-grey);
+    border-radius: 5px;
+}
+
+table {
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    border-collapse: collapse;
+    background-color: var(--gold);
+    text-align: center;
+}
+
+td, th {
+    border: 2px solid var(--white);
+    padding: 3px 0;
+}
+
+th {
+    font-size: 1.7vw;
+}
+
+td {
+    font-size: 1.5vw;
+}

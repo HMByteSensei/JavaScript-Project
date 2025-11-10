@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RPG Creature Search App</title>
+    <link href="styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+        <h1 class="title">RPG Creature Search App</h1>
+    </header>
+    <main>
+        <div class="card">
+            <label for="search-input">Search for Creature Name or ID:</label>
+            <section>
+                <input id="search-input" type="text" name="creature-input" placeholder="ID or Name" required>
+                <button id="search-button" type="button">Search</button>
+            </section>
+            <div class="result">
+                <div class="result-search hidden">
+                  <h2 id="creature-name"></h2> <!--kasnije stavi da je inline elementnt-->
+                  <p id="creature-id"></p> <!--isto-->
+                  <p>Weight: <span id="weight"></span></p> 
+                  <p>Height: <span id="height"></span></p> 
+                  <div id="types"></div>
+                </div>
+
+                <div class="result-stats">
+                    <table>
+                        <tr>
+                            <th>Base</th>
+                            <th>Stats</th>
+                        </tr>
+                        <tr>
+                            <td>HP:</td>
+                            <td id="hp"></td>
+                        </tr>
+                        <tr>
+                            <td>Attack:</td>
+                            <td id="attack"></td>
+                        </tr>
+                        <tr>
+                            <td>Defense:</td>
+                            <td id="defense"></td>
+                        </tr>
+                        <tr>
+                            <td>Sp. Attack:</td>
+                            <td id="special-attack"></td>
+                        </tr>
+                        <tr>
+                            <td>Sp. Defense:</td>
+                            <td id="special-defense"></td>
+                        </tr>
+                        <tr>
+                            <td>Speed:</td>
+                            <td id="speed"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="card"></div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
